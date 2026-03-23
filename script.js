@@ -1,7 +1,10 @@
 const filterByRegion=document.querySelector('.filter-by-region')
 const countriesContainer=document.querySelector('.countries-container')
 let allCountriesData
+const sun=document.querySelector('.sun')
+
 const searchInput=document.querySelector('.search-container input')
+const themeSwitcher=document.querySelector('.moon')
 fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital')
 .then((res)=>res.json())
 .then((data)=>{
@@ -42,4 +45,22 @@ searchInput.addEventListener('input',(e)=>{
             country.name.common.toLowerCase().includes(e.target.value.toLowerCase()))
               renderCountries(filteredCountries)
        
+})
+
+
+function updateThemeUI() {
+    const isDark = document.body.classList.contains('dark-mode')
+
+    sun.style.display = isDark ? "block" : "none"
+    themeSwitcher.style.display = isDark ? "none" : "block"
+}
+
+themeSwitcher.addEventListener('click', () => {
+    document.body.classList.add('dark-mode')
+    updateThemeUI()
+})
+
+sun.addEventListener('click', () => {
+    document.body.classList.remove('dark-mode')
+    updateThemeUI()
 })

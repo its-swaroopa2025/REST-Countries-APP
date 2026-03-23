@@ -1,5 +1,5 @@
 
-
+const sun=document.querySelector('.sun')
 const countryName = new URLSearchParams(window.location.search || '?name=India').get('name');
 const flagImage = document.querySelector('.country-details img');
 const countryNameH1=document.querySelector('.country-details h1')
@@ -12,6 +12,7 @@ const topLevelDomain = document.querySelector('.top-level-domain')
 const currencies = document.querySelector('.currencies')
 const languages = document.querySelector('.languages')
 const borderCountries = document.querySelector('.border-countries')
+const themeSwitcher=document.querySelector('.moon')
 
 
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
@@ -63,3 +64,21 @@ population.innerText = country.population.toLocaleString('en-IN')
 
   });
 
+
+
+function updateThemeUI() {
+    const isDark = document.body.classList.contains('dark-mode')
+
+    sun.style.display = isDark ? "block" : "none"
+    themeSwitcher.style.display = isDark ? "none" : "block"
+}
+
+themeSwitcher.addEventListener('click', () => {
+    document.body.classList.add('dark-mode')
+    updateThemeUI()
+})
+
+sun.addEventListener('click', () => {
+    document.body.classList.remove('dark-mode')
+    updateThemeUI()
+})
