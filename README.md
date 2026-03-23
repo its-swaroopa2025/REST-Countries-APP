@@ -53,3 +53,6 @@ A responsive web application that allows users to explore information about coun
 
 <img width="1363" height="567" alt="Screenshot from 2026-03-23 15-08-13" src="https://github.com/user-attachments/assets/39e3404b-d32b-4844-bf5f-b745758d6c91" />
 
+<img width="1363" height="567" alt="Screenshot from 2026-03-23 15-08-28" src="https://github.com/user-attachments/assets/b9488be6-9e8b-417b-a956-d58bbcfe7b9c" />
+<img width="1363" height="567" alt="Screenshot from 2026-03-23 15-08-59" src="https://github.com/user-attachments/assets/3ad8d4be-c7f2-4899-b974-2f047b05a085" /><img width="1363" height="567" alt="Screenshot from 2026-03-23 15-10-35" src="https://github.com/user-attachments/assets/7f7c8775-b34e-431c-b300-b946ba8bc59d" />
+
