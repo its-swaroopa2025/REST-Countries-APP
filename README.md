@@ -14,9 +14,13 @@ A responsive web application that allows users to explore information about coun
 * 🌙 Dark / Light mode toggle
 *   ❌ Displays **"Country not found"** for invalid searches
 * 🚫 Shows **"No border countries"** message when applicable
+* * 💾 Save theme preference using **localStorage**
+* 🏠 Add a **Home icon/button** for easy navigation
+* 🖼️ Display **small flag icons beside country names**
+* ⚡ Improve performance and loading experience
 
 ---
-##Live site:https://country-explorer-by-swaroopa.netlify.app/
+####Live site:https://country-explorer-by-swaroopa.netlify.app/
 
 ## 🛠️ Technologies Used
 
@@ -24,15 +28,6 @@ A responsive web application that allows users to explore information about coun
 * CSS
 * JavaScript (Vanilla JS)
 * REST Countries API
-
----
-
-## 📌 Future Improvements
-
-* 💾 Save theme preference using **localStorage**
-* 🏠 Add a **Home icon/button** for easy navigation
-* 🖼️ Display **small flag icons beside country names**
-* ⚡ Improve performance and loading experience
 
 
 ---
@@ -45,6 +40,7 @@ A responsive web application that allows users to explore information about coun
 * Handling edge cases (no data, errors)
 * Implementing dark/light themes
 * Improving UI/UX with real-world features
+* Grid vs Flex
 
 ---
 
