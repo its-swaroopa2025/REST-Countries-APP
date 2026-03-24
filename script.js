@@ -2,9 +2,10 @@ const filterByRegion=document.querySelector('.filter-by-region')
 const countriesContainer=document.querySelector('.countries-container')
 let allCountriesData
 const sun=document.querySelector('.sun')
-
 const searchInput=document.querySelector('.search-container input')
 const themeSwitcher=document.querySelector('.moon')
+
+
 fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital')
 .then((res)=>res.json())
 .then((data)=>{
@@ -43,7 +44,14 @@ countriesContainer.append(countryCard)
 searchInput.addEventListener('input',(e)=>{
       const filteredCountries=allCountriesData.filter((country)=>
             country.name.common.toLowerCase().includes(e.target.value.toLowerCase()))
-              renderCountries(filteredCountries)
+      if(filteredCountries.length===0){
+        countriesContainer.innerHTML='<p class="not-found">"Oops! No results found 🌍"<p>'
+       
+      }
+      else{
+        renderCountries(filteredCountries)
+      }
+              
        
 })
 

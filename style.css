@@ -137,6 +137,16 @@ background-color: var(--elements-color);
    color:var(--text-color);
 
 }
+.not-found{
+    position:relative;
+    top:50%;
+    left:50%;
+    text-align: center;
+    color:gray;
+
+
+
+}
 
  @media(max-width:700px){
     .countries-container{
