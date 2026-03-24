@@ -21,6 +21,28 @@ A responsive web application that allows users to explore information about coun
 
 ---
 ## Live site:https://country-explorer-by-swaroopa.netlify.app/
+## 🌐 Live Demo
+
+⚠️ The Netlify live site is temporarily unavailable due to usage limits.
+
+👉 You can still explore the project here:
+🔗 GitHub Repository: https://github.com/its-swaroopa2025/REST-Countries-APP
+
+---
+
+## 📂 How to Run Locally
+
+1. Clone the repository:
+git clone https://github.com/its-swaroopa2025/REST-Countries-APP.git
+  
+2. Open the folder
+
+3. Open `index.html` in your browser
+
+---
+
+✨ This project will be live again once Netlify resets usage limits.
+
 
 ## 🛠️ Technologies Used
 
