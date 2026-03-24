@@ -40,7 +40,7 @@ body.dark-mode{
 .header-container{ 
      box-shadow: 0 2px 4px 0 rgba(0 ,0 ,0, 0.1);
        padding-inline: 24px;
-       /* margin-top:16px; */
+     
          background-color: var(--elements-color);
          
      
@@ -97,17 +97,7 @@ a{
      height: auto;;
 border:1px solid #DDD;
 }
-/* .details-text{
-       display:flex;
-       flex-direction:column;
-       row-gap:12px;
-       column-gap:64px;
-       max-height: 180px;
-       flex-wrap: wrap;
-} */
-/* .details-text span{
-    word-break: break-word;
-} */
+
 .details-text p{
     margin:0;
 }
@@ -148,13 +138,7 @@ border:1px solid #DDD;
 
 
 @media(max-width:1140px){
- /* .country-details{
-    flex-direction:column;
-    align-items: flex-start;
-    margin-top: 32px;
-    gap:32px;
-  
- } */
+ 
  
   .details-text {
     grid-template-columns: 1fr;

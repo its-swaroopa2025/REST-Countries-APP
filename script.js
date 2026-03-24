@@ -62,7 +62,7 @@ function updateThemeUI() {
     sun.style.display = isDark ? "block" : "none"
     themeSwitcher.style.display = isDark ? "none" : "block"
 
-    // ✅ Save preference
+    
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
     themeSwitcher.addEventListener('click', () => {
     document.body.classList.add('dark-mode')
@@ -86,7 +86,7 @@ function loadTheme() {
     updateThemeUI()
 }
 
-// Run when page loads
+
 loadTheme()
 
 
