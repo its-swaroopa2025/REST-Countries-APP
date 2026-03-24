@@ -12,6 +12,8 @@ A responsive web application that allows users to explore information about coun
 * 📄 Separate country detail page
 * 🔗 Click on border countries to navigate to their details
 * 🌙 Dark / Light mode toggle
+*   ❌ Displays **"Country not found"** for invalid searches
+* 🚫 Shows **"No border countries"** message when applicable
 
 ---
 
@@ -31,8 +33,7 @@ A responsive web application that allows users to explore information about coun
 * 🏠 Add a **Home icon/button** for easy navigation
 * 🖼️ Display **small flag icons beside country names**
 * ⚡ Improve performance and loading experience
-*  ❌ Displays **"Country not found"** for invalid searches
-* 🚫 Shows **"No border countries"** message when applicable
+
 
 ---
 
