@@ -27,7 +27,7 @@ main{
 .header-container{
      box-shadow: 0 2px 4px 0 rgba(0 ,0 ,0, 0.1);
        padding-inline: 24px;
-       margin-top:16px;
+       /* margin-top:16px; */
        background-color: var(--elements-color);
 }
 .header-content{

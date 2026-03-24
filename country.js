@@ -70,15 +70,15 @@ population.innerText = country.population.toLocaleString('en-IN')
   });
 
 
-
 function updateThemeUI() {
     const isDark = document.body.classList.contains('dark-mode')
 
     sun.style.display = isDark ? "block" : "none"
     themeSwitcher.style.display = isDark ? "none" : "block"
-}
 
-themeSwitcher.addEventListener('click', () => {
+  
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+    themeSwitcher.addEventListener('click', () => {
     document.body.classList.add('dark-mode')
     updateThemeUI()
 })
@@ -87,3 +87,18 @@ sun.addEventListener('click', () => {
     document.body.classList.remove('dark-mode')
     updateThemeUI()
 })
+}
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme')
+
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode')
+    } else {
+        document.body.classList.remove('dark-mode')
+    }
+
+    updateThemeUI()
+}
+
+
+loadTheme()
