@@ -11,6 +11,7 @@ body{
 }
 
 
+
 body.dark-mode{
    --background-color:hsl(207,26%,17%);
      --text-color:white; 
@@ -58,6 +59,7 @@ a{
     cursor: pointer;
     background-color: var(--elements-color);
 }
+
 .country-details{
     display: flex;
     align-items: center;
@@ -87,7 +89,20 @@ border:1px solid #DDD;
             align-items: flex-start;
             flex-wrap:wrap;
             gap:10px;
+         
 }
+.border-countries img{
+    width: 30px;
+    height: 25px;
+    border-fit:cover;
+    border-radius: 2px;
+}
+.border-countries span{
+    margin-left:4px;
+    margin-top:-1px;
+    font-size:16px;
+}
+
          
 .border-countries a{display: flex;
     padding: 4px 8px;
@@ -96,6 +111,9 @@ border:1px solid #DDD;
     font-size:14px;
        background-color:var(--elements-color) ;
 
+}
+.border-countries a:hover{
+    box-shadow: 0 0 8px 0 rgba(57, 137, 156, 0.363);
 }
 
 @media(max-width:1140px){

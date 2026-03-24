@@ -54,10 +54,12 @@ population.innerText = country.population.toLocaleString('en-IN')
           .then(([borderCountry]) => {
          
             const borderCountryTag = document.createElement('a')
-            borderCountryTag.innerText = borderCountry.name.common
+            borderCountryTag.innerHTML = `<img src="${borderCountry.flags.svg}" alt="${borderCountry.name.common}"> <span>${borderCountry.name.common}</span>`
+            // borderCountryTag.innerText = borderCountry.name.common
             borderCountryTag.href=`country.html?name=${borderCountry.name.common}`
          
             borderCountries.append(borderCountryTag)
+
           })
       })
     }
